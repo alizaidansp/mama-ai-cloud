@@ -12,3 +12,4 @@ resource "local_file" "test_file" {
 output "file_content" {
   value = local_file.test_file.content
 }
+# test
