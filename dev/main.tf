@@ -2,6 +2,10 @@ terraform {
   required_version = ">= 1.0"
 }
 
+provider "aws" {
+  region = var.aws_region
+}
+
 module "object_store" {
   source  = "app.terraform.io/amalitech-global/object-storage/aws"
   version = "1.0.0"

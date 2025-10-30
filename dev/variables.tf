@@ -28,4 +28,10 @@ variable "tags" {
   type        = map(string)
 }
 
+variable "aws_region" {
+  description = "AWS region for the provider"
+  type        = string
+  default     = "eu-west-1"
+}
+
 
